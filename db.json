@@ -1,16 +1,8 @@
 {
   "alunos": [
     {
-      "id": "f155",
-      "nome": "Maria Benedita",
-      "idade": 24,
-      "curso": "Direito",
-      "email": "teste@testes.com.br",
-      "editando": true
-    },
-    {
       "id": "f594",
-      "nome": "aoba",
+      "nome": "João",
       "idade": 25,
       "curso": "Física",
       "email": "victoraugustobrum@gmail.com",
@@ -22,6 +14,21 @@
       "idade": 22,
       "curso": "Direito",
       "email": "victoraugustobrum@gmail.com"
+    },
+    {
+      "id": "ce77",
+      "nome": "Pedro",
+      "idade": 98,
+      "curso": "Física",
+      "email": "pedro@bol.com.br"
+    },
+    {
+      "id": "69d3",
+      "nome": "Caio",
+      "idade": 23,
+      "curso": "História",
+      "email": "victor@gmail.com",
+      "editando": true
     }
   ]
 }

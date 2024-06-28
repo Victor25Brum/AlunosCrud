@@ -102,3 +102,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #14.6 - Ícone "i": Volta para a página home.
 #14.7 - Cabeçalho: Traz todas as páginas de acesso possíveis ao usuário.
 #14.8 - Rodapé: Traz algumas informações sobre propriedade do sistema.
+
+https://prnt.sc/ZA6YIf-yS_9R
+https://prnt.sc/7-OUs7SV0DI0
+https://prnt.sc/MoSdWH4PV35q
