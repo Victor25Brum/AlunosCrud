@@ -1,0 +1,32 @@
+/* styles.css */
+
+body {
+  font-family: 'San Francisco', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.section {
+  text-align: justify;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}

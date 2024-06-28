@@ -1,0 +1,48 @@
+/* list.component.scss */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  /* Mantém o cabeçalho visível em telas maiores que 768px */
+  display: table-header-group;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Oculta a primeira coluna em telas menores que 768px */
+@media only screen and (max-width: 768px) {
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  th:first-child,
+  td:first-child {
+    display: none; /* Oculta a primeira coluna em telas menores */
+  }
+
+  td {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Estiliza os dados da primeira célula (ID) */
+  td:first-child {
+    font-weight: bold;
+  }
+}

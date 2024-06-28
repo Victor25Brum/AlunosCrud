@@ -1,0 +1,41 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer .nav {
+  margin-top: 10px;
+}
+
+.footer .nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centraliza os itens de navegação */
+}
+
+.footer .nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .nav ul {
+    flex-direction: column; /* Empilha os itens de navegação verticalmente */
+  }
+
+  .footer .nav ul li {
+    margin: 5px 0; /* Espaçamento menor entre os itens de navegação */
+  }
+}

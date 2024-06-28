@@ -1,0 +1,52 @@
+<h2>Lista de Alunos</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Curso</th>
+      <th>Email</th>
+      <th>Ações</th> <!-- Coluna para os ícones de editar e excluir -->
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Aqui iremos iterar sobre a lista de alunos e exibi-los -->
+    <tr *ngFor="let aluno of alunos">
+      <td>{{ aluno.id }}</td>
+      <td>
+        <input *ngIf="aluno.editando" [(ngModel)]="aluno.nome" />
+        <span *ngIf="!aluno.editando">{{ aluno.nome }}</span>
+      </td>
+      <td>
+        <input *ngIf="aluno.editando" [(ngModel)]="aluno.idade" />
+        <span *ngIf="!aluno.editando">{{ aluno.idade }}</span>
+      </td>
+      <td>
+        <select *ngIf="aluno.editando" [(ngModel)]="aluno.curso">
+          <option *ngFor="let curso of cursos" [value]="curso">{{ curso }}</option>
+        </select>
+        <span *ngIf="!aluno.editando">{{ aluno.curso }}</span>
+      </td>
+      <td>
+        <input *ngIf="aluno.editando" [(ngModel)]="aluno.email" />
+        <span *ngIf="!aluno.editando">{{ aluno.email }}</span>
+      </td>
+      <td>
+        <!-- Ícone de editar -->
+        <button *ngIf="!aluno.editando" (click)="editarAluno(aluno)">
+          <i class="fas fa-edit"></i>
+        </button>
+        <!-- Ícone de salvar -->
+        <button *ngIf="aluno.editando" (click)="salvarAluno(aluno)">
+          <i class="fas fa-save"></i>
+        </button>
+        <!-- Ícone de excluir -->
+        <button (click)="excluirAluno(aluno.id)"><i class="fas fa-trash"></i></button>
+          <!-- Ícone de informação -->
+        <button [routerLink]="['/details', aluno.id]"><i class="fas fa-info-circle"></i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>

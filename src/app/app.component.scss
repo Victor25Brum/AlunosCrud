@@ -1,0 +1,53 @@
+/* Estilos para o app.component.scss */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Faz com que o conteúdo principal ocupe todo o espaço restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Espaçamento interno para todo o conteúdo principal */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+}
+
+/* Estilos para o cabeçalho */
+app-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para a lista de navegação no cabeçalho */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para o rodapé */
+app-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}

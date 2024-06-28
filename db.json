@@ -1,0 +1,27 @@
+{
+  "alunos": [
+    {
+      "id": "f155",
+      "nome": "Maria Benedita",
+      "idade": 24,
+      "curso": "Direito",
+      "email": "teste@testes.com.br",
+      "editando": true
+    },
+    {
+      "id": "f594",
+      "nome": "aoba",
+      "idade": 25,
+      "curso": "Física",
+      "email": "victoraugustobrum@gmail.com",
+      "editando": true
+    },
+    {
+      "id": "468e",
+      "nome": "victor",
+      "idade": 22,
+      "curso": "Direito",
+      "email": "victoraugustobrum@gmail.com"
+    }
+  ]
+}

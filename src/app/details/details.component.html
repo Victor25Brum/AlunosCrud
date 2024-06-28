@@ -1,0 +1,12 @@
+<h2>Detalhes do Aluno</h2>
+
+<div *ngIf="aluno">
+  <p><strong>ID:</strong> {{ aluno.id }}</p>
+  <p><strong>Nome:</strong> {{ aluno.nome }}</p>
+  <p><strong>Idade:</strong> {{ aluno.idade }}</p>
+  <p><strong>Curso:</strong> {{ aluno.curso }}</p>
+  <p><strong>Email:</strong> {{ aluno.email }}</p>
+</div>
+
+<!-- Botão para voltar à lista de alunos -->
+<button (click)="voltarParaLista()" class="btn-voltar">Voltar para Lista</button>

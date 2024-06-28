@@ -1,0 +1,39 @@
+.details-container {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.details-field {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.btn-voltar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .details-container {
+    width: 90%;
+    padding: 10px;
+  }
+}
